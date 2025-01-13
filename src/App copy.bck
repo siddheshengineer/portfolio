@@ -1,0 +1,62 @@
+import React, { useState } from 'react';
+
+const Portfolio = () => {
+  const [activeSection, setActiveSection] = useState('about');
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setActiveSection(sectionId);
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full bg-white shadow-sm z-50">
+        <div className="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+          <span className="text-xl font-bold text-gray-800">Siddhesh Nikam</span>
+          <div className="flex space-x-4">
+            {['about', 'experience', 'skills', 'projects'].map((section) => (
+              <button
+                key={section}
+                onClick={() => scrollToSection(section)}
+                className={`px-3 py-2 rounded-md ${
+                  activeSection === section ? 'text-blue-600 font-bold' : 'text-gray-600'
+                } hover:text-blue-600`}
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </button>
+            ))}
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="pt-24 pb-12 bg-gradient-to-r from-blue-50 to-indigo-50 text-center">
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">DevOps Engineer & Cloud Developer</h1>
+        <p className="text-xl text-gray-600 mb-8">
+          Building and automating resilient, scalable cloud solutions
+        </p>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-16 max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-gray-900 mb-8">About Me</h2>
+        <p className="text-gray-600 leading-relaxed">
+          DevOps Engineer with expertise in building and automating resilient, scalable cloud solutions,
+          particularly in high-demand environments. Experienced in Python, AWS, and CI/CD to enhance system
+          observability and efficiency.
+        </p>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 bg-gray-900 text-white text-center">
+        <p>© 2024 Siddhesh Nikam. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default Portfolio;

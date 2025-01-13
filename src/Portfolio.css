@@ -1,0 +1,122 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+  }
+  
+  h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Navigation */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  nav .max-w-6xl {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #6b7280;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-buttons button:hover {
+    color: #1d4ed8;
+  }
+  
+  .nav-buttons button.active {
+    color: #1d4ed8;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .bg-gradient-to-r {
+    padding: 6rem 1rem;
+    background: linear-gradient(to right, #ebf8ff, #eef2ff);
+    text-align: center;
+  }
+  
+  .bg-gradient-to-r h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .bg-gradient-to-r p {
+    font-size: 1.2rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+  }
+  
+  section p {
+    font-size: 1rem;
+    color: #4b5563;
+    line-height: 1.6;
+  }
+  
+  /* Footer */
+  footer {
+    background: #1f2937;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
