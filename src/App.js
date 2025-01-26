@@ -54,11 +54,11 @@ const App = () => {
               Building and automating resilient, scalable cloud solutions
             </p>
             <div className="flex justify-center space-x-6">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://github.com/siddhesh-its" target="_blank" rel="noopener noreferrer" 
                  className="text-gray-600 hover:text-gray-900">
                 <FaGithub className="w-6 h-6" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://www.linkedin.com/in/siddhesh-sn/" target="_blank" rel="noopener noreferrer" 
                  className="text-gray-600 hover:text-gray-900">
                 <FaLinkedin className="w-6 h-6" />
               </a>
