@@ -20,10 +20,10 @@ const App = () => {
       <nav className="fixed top-0 w-full bg-white shadow-sm z-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
-            <span className="text-4xl font-bold text-gray-800">Siddhesh Nikam</span>
+            <span className="text-4xl font-bold text-gray-800 font-Quintessential">Siddhesh Nikam</span>
             <div className="flex space-x-4">
               <button onClick={() => scrollToSection('about')} 
-                      className={`px-3 py-2 rounded-md ${activeSection === 'about' ? 'text-blue-600' : 'text-gray-600'}`}>
+                      className={`px-3 py-2 f rounded-md ${activeSection === 'about' ? 'text-blue-600' : 'text-gray-600'}`}>
                 About
               </button>
               <button onClick={() => scrollToSection('experience')} 
