@@ -18,8 +18,19 @@ import {
   RiNodeTree
 } from "react-icons/ri";
 import { GrDocker } from "react-icons/gr";
+import { AiOutlineKubernetes } from "react-icons/ai";
 
 const skillsData = {
+  "DevOps & Cloud Tools": {
+    icon: <RiCloudLine className="w-6 h-6" />,
+    skills: [
+      { name: "AWS (ECS, EC2)", icon: <RiCloudLine /> },
+      { name: "Docker", icon: <GrDocker /> },
+      { name: "Kubernetes", icon: <AiOutlineKubernetes /> },
+      { name: "Jenkins", icon: <RiSettings3Line /> },
+      { name: "Terraform", icon: <RiServerLine /> },
+    ]
+  },
   "Programming & Database": {
     icon: <RiCodeSLine className="w-6 h-6" />,
     skills: [
@@ -29,16 +40,6 @@ const skillsData = {
       { name: "MongoDB", icon: <RiDatabase2Line /> },
       { name: "Neo4j", icon: <RiDatabase2Line /> },
       { name: "DynamoDB", icon: <RiDatabase2Line /> },
-    ]
-  },
-  "Cloud & Tools": {
-    icon: <RiCloudLine className="w-6 h-6" />,
-    skills: [
-      { name: "AWS (ECS, EC2)", icon: <RiCloudLine /> },
-      { name: "Docker", icon: <GrDocker /> },
-      { name: "Kubernetes", icon: <RiArchiveLine /> },
-      { name: "Jenkins", icon: <RiSettings3Line /> },
-      { name: "Terraform", icon: <RiServerLine /> },
     ]
   },
   "Configuration & Security": {
@@ -61,7 +62,7 @@ const skillsData = {
 };
 
 const SkillsSection = () => {
-  const [activeCategory, setActiveCategory] = useState('Programming & Database');
+  const [activeCategory, setActiveCategory] = useState('DevOps & Cloud Tools');
 
   const handleCategoryClick = (category) => {
     setActiveCategory(activeCategory === category ? null : category);

@@ -198,7 +198,7 @@
         </section>
 
 
-        {/* Skills Section */}
+        {/* Skills Section
         <section id="skills" className="py-10">
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Technical Skills</h2>
@@ -237,7 +237,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <SkillsSection />
 
