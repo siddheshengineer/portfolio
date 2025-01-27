@@ -19,10 +19,13 @@ import {
 } from "react-icons/ri";
 import { GrDocker } from "react-icons/gr";
 import { AiOutlineKubernetes } from "react-icons/ai";
+import { SiGithubactions,
+    SiApachekafka 
+ } from "react-icons/si";
 
 const skillsData = {
-  "DevOps & Cloud Tools": {
-    icon: <RiCloudLine className="w-6 h-6" />,
+  "DevOps Tools": {
+    icon: <SiGithubactions className="w-6 h-6" />,
     skills: [
       { name: "AWS (ECS, EC2)", icon: <RiCloudLine /> },
       { name: "Docker", icon: <GrDocker /> },
@@ -56,13 +59,13 @@ const skillsData = {
     skills: [
       { name: "Node.js", icon: <RiTerminalBoxLine /> },
       { name: "Linux/Unix", icon: <RiComputerLine /> },
-      { name: "Kafka", icon: <RiNodeTree /> },
+      { name: "Kafka", icon: <SiApachekafka />},
     ]
   }
 };
 
 const SkillsSection = () => {
-  const [activeCategory, setActiveCategory] = useState('DevOps & Cloud Tools');
+  const [activeCategory, setActiveCategory] = useState('DevOps Tools');
 
   const handleCategoryClick = (category) => {
     setActiveCategory(activeCategory === category ? null : category);
