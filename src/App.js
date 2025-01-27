@@ -2,6 +2,7 @@
   import { FaGithub, FaLinkedin } from 'react-icons/fa';
   import { MdEmail } from 'react-icons/md';
   import { IoIosArrowDown } from 'react-icons/io';
+  import SkillsSection from './SkillsSection';
 
   const App = () => {
     const [activeSection, setActiveSection] = useState('about');
@@ -80,13 +81,33 @@
             <h2 className="text-3xl font-bold text-gray-900 mb-8">About Me</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <p className="text-gray-600 leading-relaxed">
+                {/* <p className="text-gray-600 leading-relaxed">
                   DevOps Engineer with expertise in building CICD pipelines, solutions and automation resilient, scalable cloud solutions, 
                   particularly in high-demand environments. Experienced in Python, AWS, and CI/CD to enhance 
                   system observability and efficiency.
-                </p>
-                <div className="mt-6">
-                  <h3 className="text-xl font-semibold mb-4">Education</h3>
+                </p> */}
+                <div class="max-w-3xl mx-auto p-6 bg-gray-50 rounded-b-lg shadow-md">
+                  <p class="text-gray-700 mb-4 text-justify">
+                    I am a dedicated <span class="font-semibold">DevOps Engineer</span> with expertise in
+                    <span class="font-semibold"> CI/CD pipeline development</span>, <span class="font-semibold">automation</span>, and
+                    <span class="font-semibold"> scalable solutions</span>. I specialize in streamlining workflows, enhancing
+                    observability, and optimizing infrastructure for performance.
+                  </p>
+                  <h2 class="font-semibold text-gray-800 mb-2">Key Achievements</h2>
+                  <ul class="list-disc list-inside text-gray-700 space-y-1">
+                    <li>Cut deployment times by and boosted system efficiency.</li>
+                    <li>Maintained high availability for microservices infrastructure.</li>
+                    <li>Automated workflows, with custom scripts and tools.</li>
+                    <li>Scaled platforms to serve over thousands of users.</li>
+                  </ul>
+                  <p className="text-gray-700 mt-1"><br></br>
+                    My mission is to simplify workflows and build resilient, scalable systems that empower teams and drive innovation.
+                  </p>
+                </div>
+                {/*  */}
+              </div>
+              <div>
+                  <h3 className="text-xl font-semibold mb-2">Education</h3>
                   <div className="space-y-4">
                     <div>
                       <p className="font-medium">Post Graduate Degree, Information Technology Solutions</p>
@@ -94,26 +115,24 @@
                       <p className="text-gray-500">Graduation: 2024</p>
                     </div>
                     <div>
-                      <p className="font-medium">Bachelor of Engineering, Electronics Engineering</p>
+                      <p className="font-medium">Bachelor of Engineering, Electronics and Telecommunication Engineering</p>
                       <p className="text-gray-600">University of Mumbai</p>
                       <p className="text-gray-500">Graduation: 2019</p>
                     </div>
-                  </div>
+
                 </div>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-4">Certifications</h3>
-                <div className="space-y-4">
-                  <div className="p-4 bg-white rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mt-2 mb-4">Certifications</h3>
+                <div className="flex space-x-3">
+                  <div className="flex-1 p-4 bg-white rounded-lg shadow-sm">
                     <p className="font-medium">AWS Solutions Architect</p>
-                    <p className="text-gray-600">Amazon Web Services | Jan 2024</p>
+                    <p className="text-gray-600">Amazon Web Services</p>
                   </div>
-                  <div className="p-4 bg-white rounded-lg shadow-sm">
-                    <p className="font-medium">PagerDuty DevOps Professional</p>
-                  </div>
-                  <div className="p-4 bg-white rounded-lg shadow-sm">
+                  <div className="flex-1 p-4 bg-white rounded-lg shadow-sm">
                     <p className="font-medium">Google Cloud Professional Cloud Architect</p>
-                    <p className="text-gray-600">Google Cloud | Jun 2026</p>
+                    <p className="text-gray-600">Google Cloud</p>
+                  </div>
+                  <div className="flex-1 p-4 bg-white rounded-lg shadow-sm">
+                    <p className="font-medium">PagerDuty DevOps Professional</p>
                   </div>
                 </div>
               </div>
@@ -122,44 +141,65 @@
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="py-16 bg-gray-50">
+        <section id="experience" className="py-3 bg-gray-50">
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Work Experience</h2>
             <div className="space-y-8">
+              {/* Experience 1 */}
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h3 className="text-xl font-semibold">DevOps Engineer – Graduate Intern</h3>
+                    <h3 className="text-xl font-semibold">DevOps Developer – Graduate Intern</h3>
                     <p className="text-gray-600">FundEvolve</p>
                   </div>
                   <p className="text-gray-500">Dec 2023 - Apr 2024</p>
                 </div>
                 <ul className="list-disc list-inside space-y-2 text-gray-600">
-                  <li>Built CI/CD with GitHub Actions, Docker, Node.js cutting deployment execution time by 20%</li>
-                  <li>Strengthened platform security by 30% through AWS IAM role design</li>
-                  <li>Authored clear documentation and architectural diagrams for CI/CD workflows</li>
+                  <li>Engineered a streamlined deployment process using GitHub Actions and Docker, achieving faster releases.</li>
+                  <li>Contributed to building a financial goals application, enhancing user experience and data tracking capabilities.</li>
+                  <li>Designed clear documentation and diagrams for CI/CD workflows to facilitate seamless developer onboarding.</li>
+                  <li>Collaborated across global teams to improve the scalability of microservices on the platform.</li>
                 </ul>
               </div>
+              {/* Experience 2 */}
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h3 className="text-xl font-semibold">DevOps Developer</h3>
+                    <h3 className="text-xl font-semibold">DevOps Engineer</h3>
                     <p className="text-gray-600">Tata Consultancy Services</p>
                   </div>
                   <p className="text-gray-500">Aug 2020 - Aug 2022</p>
                 </div>
                 <ul className="list-disc list-inside space-y-2 text-gray-600">
-                  <li>Developed CI/CD pipelines using GitLab and ArgoCD, reducing deployment time by 70%</li>
-                  <li>Maintained high availability (>90%) of microservices on AWS ECS and EKS</li>
-                  <li>Implemented Datadog and Prometheus monitoring, achieving 98% SLA compliance</li>
+                  <li>Redesigned CI/CD pipelines to support rapid deployment cycles and increased release frequency.</li>
+                  <li>Maintained and monitored a robust infrastructure, ensuring service availability and reliability for users across Europe.</li>
+                  <li>Automated workflows for configuration and provisioning, simplifying deployments in distributed environments.</li>
+                  <li>Led a support team to address critical issues, reducing incident response time and ensuring SLA compliance.</li>
+                </ul>
+              </div>
+              {/* Experience 3 */}
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <div className="flex justify-between items-start mb-4">
+                  <div>
+                    <h3 className="text-xl font-semibold">Software Engineer (Cloud and DevOps Focus)</h3>
+                    <p className="text-gray-600">Tata Consultancy Services</p>
+                  </div>
+                  <p className="text-gray-500">Aug 2019 - Aug 2020</p>
+                </div>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  <li>Improved platform security by implementing role-based access controls aligned with least privilege principles.</li>
+                  <li>Refactored legacy systems to align with modern cloud-native standards, reducing error rates significantly.</li>
+                  <li>Supported seamless migrations and upgrades, ensuring operational continuity across projects.</li>
+                  <li>Participated in on-call rotations to resolve critical incidents, ensuring system reliability and reducing downtime.</li>
                 </ul>
               </div>
             </div>
           </div>
         </section>
 
+
         {/* Skills Section */}
-        <section id="skills" className="py-16">
+        <section id="skills" className="py-10">
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Technical Skills</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -198,6 +238,8 @@
             </div>
           </div>
         </section>
+
+        <SkillsSection />
 
         {/* Projects Section */}
         <section id="projects" className="py-16 bg-gray-50">
