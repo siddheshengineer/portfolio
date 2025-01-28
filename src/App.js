@@ -81,17 +81,12 @@
             <h2 className="text-3xl font-bold text-gray-900 mb-8">About Me</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                {/* <p className="text-gray-600 leading-relaxed">
-                  DevOps Engineer with expertise in building CICD pipelines, solutions and automation resilient, scalable cloud solutions, 
-                  particularly in high-demand environments. Experienced in Python, AWS, and CI/CD to enhance 
-                  system observability and efficiency.
-                </p> */}
-                <div class="max-w-3xl mx-auto p-6 bg-gray-50 rounded-b-lg shadow-md">
+                <div class="max-w-3xl mx-auto p-6 bg-gradient-to-b from-white to-gray-50 rounded-b-lg shadow-md">
                   <p class="text-gray-700 mb-4 text-justify">
                     I am a dedicated <span class="font-semibold">DevOps Engineer</span> with expertise in
                     <span class="font-semibold"> CI/CD pipeline development</span>, <span class="font-semibold">automation</span>, and
                     <span class="font-semibold"> scalable solutions</span>. I specialize in streamlining workflows, enhancing
-                    observability, and optimizing infrastructure for performance.
+                    observability, and optimizing infrastructure for performance, availability and scalability.
                   </p>
                   <h2 class="font-semibold text-gray-800 mb-2">Key Achievements</h2>
                   <ul class="list-disc list-inside text-gray-700 space-y-1">
@@ -100,8 +95,8 @@
                     <li>Automated workflows, with custom scripts and tools.</li>
                     <li>Scaled platforms to serve over thousands of users.</li>
                   </ul>
-                  <p className="text-gray-700 mt-1"><br></br>
-                    My mission is to simplify workflows and build resilient, scalable systems that empower teams and drive innovation.
+                  <p className="text-gray-700 mt-1 text-justify"><br></br>
+                    My mission is to simplify workflows and build resilient systems that empower teams and drive innovation.
                   </p>
                 </div>
                 {/*  */}
@@ -124,7 +119,7 @@
                 <h3 className="text-xl font-semibold mt-2 mb-4">Certifications</h3>
                 <div className="flex space-x-3">
                   <div className="flex-1 p-4 bg-white rounded-lg shadow-sm">
-                    <p className="font-medium">AWS Solutions Architect</p>
+                    <p className="font-medium">Solutions Architect - Associate</p>
                     <p className="text-gray-600">Amazon Web Services</p>
                   </div>
                   <div className="flex-1 p-4 bg-white rounded-lg shadow-sm">
@@ -141,7 +136,7 @@
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="py-3 bg-gray-50">
+        <section id="experience" className="py-3 bg-gray-50 scroll-mt-16">
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Work Experience</h2>
             <div className="space-y-8">
@@ -196,48 +191,6 @@
             </div>
           </div>
         </section>
-
-
-        {/* Skills Section
-        <section id="skills" className="py-10">
-          <div className="max-w-6xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">Technical Skills</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="p-6 bg-white rounded-lg shadow-sm">
-                <h3 className="font-semibold mb-4">Programming & Database</h3>
-                <div className="space-y-2 text-gray-600">
-                  <p>Python, Java, Bash, Golang</p>
-                  <p>PostgreSQL, SQL Server, RDS</p>
-                  <p>MongoDB, Neo4j, DynamoDB</p>
-                </div>
-              </div>
-              <div className="p-6 bg-white rounded-lg shadow-sm">
-                <h3 className="font-semibold mb-4">Cloud & Tools</h3>
-                <div className="space-y-2 text-gray-600">
-                  <p>AWS (ECS, EC2), Azure, GCP</p>
-                  <p>Jenkins, Docker, Kubernetes</p>
-                  <p>Terraform, CloudFormation</p>
-                </div>
-              </div>
-              <div className="p-6 bg-white rounded-lg shadow-sm">
-                <h3 className="font-semibold mb-4">Configuration & Security</h3>
-                <div className="space-y-2 text-gray-600">
-                  <p>Ansible, Git, Grafana</p>
-                  <p>HashiCorp Vault</p>
-                  <p>AWS Secrets Manager, Trivy</p>
-                </div>
-              </div>
-              <div className="p-6 bg-white rounded-lg shadow-sm">
-                <h3 className="font-semibold mb-4">Other Tools</h3>
-                <div className="space-y-2 text-gray-600">
-                  <p>Node.js, Express.js</p>
-                  <p>Linux/Unix (Ubuntu, CentOS)</p>
-                  <p>RabbitMQ, Kafka, Maven</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
 
         <SkillsSection />
 
