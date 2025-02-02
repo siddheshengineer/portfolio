@@ -34,7 +34,9 @@ import { SiGithubactions,
     SiGnubash, 
     SiTrivy,
     SiElastic,
-    SiHelm,     
+    SiHelm,  
+    SiApachemaven,
+    SiApachetomcat,   
  } from "react-icons/si";
 
 const initialSkillsData = {
@@ -81,6 +83,8 @@ const initialSkillsData = {
     skills: [
       { name: "Linux/Unix", icon: <RiComputerLine /> },
       { name: "RabbitMQ", icon: <SiRabbitmq /> },
+      { name: "Maven", icon: <SiApachemaven /> },
+      { name: "Tomcat", icon: <SiApachetomcat /> },
     ]
   }
 };
