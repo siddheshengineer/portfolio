@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
-  "homepage": "https://www.siddheshnikam.online",
+  "homepage": "",
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
