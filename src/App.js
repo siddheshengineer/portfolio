@@ -231,7 +231,6 @@ const App = () => {
             </div>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
               <a href="mailto:siddheshnikam8@gmail.com" className="hover:text-gray-300">siddheshnikam8@gmail.com</a>
-              <a href="tel:+14375599818" className="hover:text-gray-300">(437) 559-9818</a>
             </div>
           </div>
         </div>
