@@ -77,74 +77,133 @@ const App = () => {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-16 scroll-mt-16 ">
-        <div className="max-w-6xl mx-auto px-4 ">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">About Me</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <div className="max-w-3xl mx-auto p-6 bg-gradient-to-r from-gray-50 to-slate-100 rounded-lg shadow-md">
-                <p className="text-gray-700 mb-4 text-justify">
-                  I am a dedicated <span className="font-semibold">DevOps Engineer</span> with expertise in
-                  <span className="font-semibold"> Cloud Automation</span>, <span className="font-semibold">CI/CD</span>, 
-                  <span className="font-semibold"> Kubernetes</span>, and <span className="font-semibold">SRE best practices</span>, 
-                  particularly in high-demand environments. Experienced in driving DevOps transformation through 
-                  <span className="font-semibold"> GitOps</span>, <span className="font-semibold">Infrastructure as Code</span>, 
-                  <span className="font-semibold"> system observability</span> and <span className="font-semibold">resilience</span>.
+      {/* Simplified About Section */}
+      <section id="about" className="py-12 bg-slate-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">About Me</h2>
+          
+          {/* Main content grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            {/* Left Column - Bio + Achievements */}
+            <div className="space-y-6">
+              {/* Bio Card */}
+              <div className="bg-white rounded-lg shadow-sm p-6">
+                <h3 className="text-xl font-semibold mb-4 text-gray-800 border-b pb-2">Profile</h3>
+                <p className="text-gray-700 mb-4">
+                  I am a dedicated <span className="font-semibold">DevOps Engineer</span> with expertise in{" "}
+                  <span className="font-semibold">Cloud Automation</span>,{" "}
+                  <span className="font-semibold">CI/CD</span>,{" "} 
+                  <span className="font-semibold">Kubernetes</span>, and{" "}
+                  <span className="font-semibold">SRE best practices</span>, 
+                  particularly in high-demand environments. Experienced in driving DevOps transformation through{" "}
+                  <span className="font-semibold">GitOps</span>,{" "}
+                  <span className="font-semibold">Infrastructure as Code</span>,{" "} 
+                  <span className="font-semibold">system observability</span> and{" "}
+                  <span className="font-semibold">resilience</span>.
                 </p>
-                <h2 className="font-semibold text-gray-800 mb-2">Key Achievements</h2>
-                <ul className="list-disc list-inside text-gray-700 space-y-2">
-                  <li>Reduced deployment times by 20% and improved system efficiency by 30%</li>
-                  <li>Enhanced system resilience ensuring 99.9% uptime for microservices infrastructure</li>
-                  <li>Reduced incident response time by 35% through SRE initiatives</li>
-                  <li>Accelerated infrastructure deployment by 60% through automation</li>
-                  <li>Reduced MTTR by 30% with enhanced observability solutions</li>
-                </ul>
-                <p className="text-gray-700 mt-4 text-justify">
-                  My mission is to simplify workflows and build resilient systems that empower teams and drive innovation.
+                <p className="text-gray-700 italic border-l-4 border-blue-200 pl-3 py-1">
+                  "My mission is to simplify workflows and build resilient systems that empower teams and drive innovation."
                 </p>
               </div>
+
+              {/* Achievements Card */}
+              <div className="bg-white rounded-lg shadow-sm p-6">
+                <h3 className="text-xl font-semibold mb-4 text-gray-800 border-b pb-2">Key Achievements</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="inline-flex items-center justify-center h-5 w-5 rounded-full bg-green-100 text-green-700 mr-2 mt-0.5">✓</span>
+                    <span>Reduced deployment times by 20% and improved system efficiency by 30%</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-flex items-center justify-center h-5 w-5 rounded-full bg-green-100 text-green-700 mr-2 mt-0.5">✓</span>
+                    <span>Enhanced system resilience ensuring 99.9% uptime for microservices infrastructure</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-flex items-center justify-center h-5 w-5 rounded-full bg-green-100 text-green-700 mr-2 mt-0.5">✓</span>
+                    <span>Reduced incident response time by 35% through SRE initiatives</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-flex items-center justify-center h-5 w-5 rounded-full bg-green-100 text-green-700 mr-2 mt-0.5">✓</span>
+                    <span>Accelerated infrastructure deployment by 60% through automation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="inline-flex items-center justify-center h-5 w-5 rounded-full bg-green-100 text-green-700 mr-2 mt-0.5">✓</span>
+                    <span>Reduced MTTR by 30% with enhanced observability solutions</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Education</h3>
-              <div className="space-y-4">
-                <div className="p-4 bg-white rounded-lg shadow-sm">
-                  <p className="font-medium">Post Graduate Degree, Information Technology Solutions</p>
-                  <p className="text-gray-600">Humber College, Toronto</p>
-                  <p className="text-gray-500">Sep 2022 - Apr 2024</p>
-                </div>
-                <div className="p-4 bg-white rounded-lg shadow-sm">
-                  <p className="font-medium">Bachelor of Engineering, Electronics and Telecommunication</p>
-                  <p className="text-gray-600">University of Mumbai</p>
-                  <p className="text-gray-500">Sep 2015 - Apr 2019</p>
+            
+            {/* Right Column - Education + Certifications */}
+            <div className="space-y-6">
+              {/* Education Card */}
+              <div className="bg-white rounded-lg shadow-sm p-6">
+                <h3 className="text-xl font-semibold mb-4 text-gray-800 border-b pb-2">Education</h3>
+                <div className="space-y-5">
+                  <div className="flex gap-4">
+                    <div className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-700 rounded-lg flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900">Post Graduate Degree, Information Technology Solutions</h4>
+                      <p className="text-gray-600">Humber College, Toronto</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex gap-4">
+                    <div className="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-700 rounded-lg flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998a12.078 12.078 0 01.665-6.479L12 14z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900">Bachelor of Engineering, Electronics & Telecommunication</h4>
+                      <p className="text-gray-600">University of Mumbai</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               
-              <h3 className="text-xl font-semibold mt-6 mb-4">Certifications</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <div className="p-4 bg-white rounded-lg shadow-sm">
-                  <p className="font-medium">AWS Solutions Architect - Associate</p>
-                  <p className="text-gray-600">Amazon Web Services</p>
-                  <p className="text-gray-500">Issued: Jan 2024</p>
-                </div>
-                <div className="p-4 bg-white rounded-lg shadow-sm">
-                  <p className="font-medium">GCP Professional Cloud Architect</p>
-                  <p className="text-gray-600">Google Cloud</p>
-                  <p className="text-gray-500">Issued: Jun 2023</p>
-                </div>
-                <div className="p-4 bg-white rounded-lg shadow-sm">
-                  <p className="font-medium">PagerDuty DevOps Professional</p>
-                  <p className="text-gray-500">Issued: 2023</p>
-                </div>
-                <div className="p-4 bg-white rounded-lg shadow-sm">
-                  <p className="font-medium">Oracle Cloud Infrastructure Associate</p>
-                  <p className="text-gray-600">Oracle Cloud Infrastructure</p>
-                  <p className="text-gray-500">Issued: Mar 2025</p>
-                </div>
-                <div className="p-4 bg-white rounded-lg shadow-sm">
-                  <p className="font-medium">Certified Kubernetes Administrator</p>
-                  <p className="text-gray-500">Expected: Apr 2025</p>
-                  <p className="text-xs text-blue-600 italic">In progress</p>
+              {/* Certifications Card */}
+              <div className="bg-white rounded-lg shadow-sm p-6">
+                <h3 className="text-xl font-semibold mb-4 text-gray-800 border-b pb-2">Certifications</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {/* Certificate item - simple, easy to duplicate */}
+                  <div className="p-3 bg-gray-50 rounded-lg border border-gray-200">
+                    <h4 className="font-medium text-gray-900 mb-1">AWS Solutions Architect - Associate</h4>
+                    <p className="text-gray-600 text-sm">Amazon Web Services</p>
+                    <p className="text-gray-500 text-xs">Issued: Jan 2021</p>
+                  </div>
+                  
+                  <div className="p-3 bg-gray-50 rounded-lg border border-gray-200">
+                    <h4 className="font-medium text-gray-900 mb-1">GCP Professional Cloud Architect</h4>
+                    <p className="text-gray-600 text-sm">Google Cloud</p>
+                    <p className="text-gray-500 text-xs">Issued: Jun 2024</p>
+                  </div>
+                  
+                  <div className="p-3 bg-gray-50 rounded-lg border border-gray-200">
+                    <h4 className="font-medium text-gray-900 mb-1">PagerDuty DevOps Professional</h4>
+                    <p className="text-gray-500 text-xs">Issued: July 2024</p>
+                  </div>
+                  
+                  <div className="p-3 bg-gray-50 rounded-lg border border-gray-200">
+                    <h4 className="font-medium text-gray-900 mb-1">Oracle Cloud Infrastructure Associate</h4>
+                    <p className="text-gray-600 text-sm">Oracle Cloud Infrastructure</p>
+                    <p className="text-gray-500 text-xs">Issued: Mar 2025</p>
+                  </div>
+                  
+                  <div className="p-3 bg-gray-50 rounded-lg border border-gray-200 border-l-4 border-l-blue-400">
+                    <h4 className="font-medium text-gray-900 mb-1">Certified Kubernetes Administrator</h4>
+                    <p className="text-gray-500 text-xs">Expected: Apr 2025</p>
+                    <p className="text-xs text-blue-600 italic mt-1">In progress</p>
+                  </div>
+                  
+                  {/* Add more certificates as needed - simply copy and modify the above div */}
                 </div>
               </div>
             </div>

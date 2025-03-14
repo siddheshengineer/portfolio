@@ -3,6 +3,33 @@ import React from 'react';
 // Project data array - all projects in one place for easy management
 const projectsData = [
   {
+    id: "llm-containerization",
+    title: "LLM-Based Containerization",
+    isCurrent: false,
+    overview: "An AI-powered tool that dynamically generates optimized Dockerfiles using LLMs, ensuring best practices for containerization and automation.",
+    bulletPoints: [
+      { label: "Multi-LLM Support", description: "Uses Ollama (Llama3) and Google Gemini 2.0 via Google AI Studio" },
+      { label: "Best Practices", description: "Generates Dockerfiles with multi-stage builds, dependency installation, and workspace setup" },
+      { label: "Automation", description: "Removes manual effort in writing Dockerfiles by leveraging AI" },
+      { label: "Customizable", description: "Adapts to different programming languages and project structures" },
+      { label: "Remote & Local Models", description: "Supports both local LLM execution and remote API calls via Google AI Studio" }
+    ],
+    structure: `📦 llm-containerization
+  ├── 📄 localScript.py     # Uses Llama3 local inference
+  ├── 📄 hostedLLMScript.py # Uses gemini-2.0 remote inference
+  ├── 📄 README.md          # Project documentation
+  └── 📄 .env               # .env file for API keys`,
+    goals: [
+      "Leverage AI to automate Dockerfile generation",
+      "Ensure best practices in containerization",
+      "Provide support for multiple programming languages",
+      "Enable both local and cloud-based LLM processing",
+      "Improve DevOps workflows by reducing manual effort"
+    ],
+    technologies: ["Python", "Ollama", "Llama3", "Google Gemini 2.0", "Google AI Studio", "Docker"],
+    link: "https://github.com/siddheshengineer/LLM-based-projects/tree/main/containerizationScript"
+  },
+  {
     id: "gitops-k3d",
     title: "GitOps Project with K3d, Azure Arc & FluxCD",
     isCurrent: false,
@@ -154,7 +181,7 @@ done`,
     ],
     structure: `📦 ephemeral-db-branching
 ├── 📂 migrations        # Database migration scripts
-├── 📂 .github/workflows # CI/CD workflows for ephemeral branching
+├── 📂 .github/workflows # CI/CD for ephemeral branching
 ├── 📄 index.js          # Node.js application entry point
 ├── 📄 package.json      # Project dependencies and scripts
 ├── 📄 .env.example      # Example environment variables
@@ -169,6 +196,7 @@ done`,
     technologies: ["Node.js", "PostgreSQL", "Neon", "GitHub Actions", "CI/CD", "Database Migrations"],
     link: "https://github.com/siddheshengineer/Ephemeral-Database-CICD-project"
   },
+  
 //   {
 //     id: "observability-platform",
 //     title: "Enhanced Observability Platform",
