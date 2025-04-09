@@ -41,17 +41,21 @@ const App = () => {
                       className={`px-3 py-2 rounded-md ${activeSection === 'projects' ? 'text-blue-600' : 'text-gray-600'}`}>
                 Projects!!
               </button>
+              <button onClick={() => window.open('https://ai.siddheshnikam.online/', '_blank')} 
+                     className="px-3 py-2 rounded-md text-blue-600">
+                Live AI research website
+              </button>
             </div>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-12 bg-gradient-to-r from-blue-50 to-indigo-100 shadow-lg rounded-3xl">
+      <section className="pt-24 pb-12 bg-gradient-to-r from-blue-200 to-indigo-200 rounded-b-3xl shadow-md"> 
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              DevOps Engineer | SRE & Cloud Automation Expert
+              DevOps Engineer | Cloud Automation Expert
             </h1>
             <p className="text-xl text-gray-600 mb-8">
               Building resilient, scalable cloud solutions with expertise in CI/CD, Kubernetes, and SRE best practices
@@ -65,7 +69,7 @@ const App = () => {
                className="text-gray-600 hover:text-gray-900">
               <FaLinkedin className="w-6 h-6" />
               </a>
-              <a href="mailto:siddheshnikam8@gmail.com" 
+              <a href="mailto:siddheshnikam.online.headscarf283@passinbox.com" 
                 className="text-gray-600 hover:text-gray-900">
                 <MdEmail className="w-6 h-6" />
               </a>
@@ -289,7 +293,7 @@ const App = () => {
               <p>© 2025 Siddhesh Nikam. All rights reserved.</p>
             </div>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
-              <a href="mailto:siddheshnikam8@gmail.com" className="hover:text-gray-300">siddheshnikam8@gmail.com</a>
+              <a href="mailto:siddheshnikam.online.headscarf283@passinbox.com" className="hover:text-gray-300">Alias email</a>
             </div>
           </div>
         </div>

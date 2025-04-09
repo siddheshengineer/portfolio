@@ -21,8 +21,8 @@ const SkillsSection = () => {
       icon: "💻",
       description: "Languages, frameworks, and database technologies for application development.",
       skills: [
-        "Java", "Python", "Bash", "Go", "Node.js","Flask", "PostgreSQL", "Oracle", "SQL Server", "MySQL", "MongoDB", 
-        "Neo4j", "GraphQL", "REST API", "Neon DB", "PHP (Laravel)"
+        "Java", "Python", "Bash", "Go", "Node.js", "Langchain", "AI Agents and workflows", "PostgreSQL", "Oracle", "SQL Server", "MySQL", "MongoDB", 
+        "Neo4j", "DSA", "FastAPI", "GraphQL", "REST API", "Neon", "PHP (Laravel)", 
       ]
     },
     {
@@ -40,9 +40,9 @@ const SkillsSection = () => {
       icon: "🛠️",
       description: "Supporting tools and methodologies for software development.",
       skills: [
-        "Tomcat", "Gradle", "npm", "Linux (RHEL based, Ubuntu based)", "Agile", "Jira", "RabbitMQ", 
+        "LLMs & AI", "ML and DL", "Tomcat", "Gradle", "npm", "Linux (RHEL based, Ubuntu based)", "Agile", "Jira", "RabbitMQ", 
         "Kibana", "Scrum", "Ingress Management", "Microservices", 
-        "Database Migrations", "LLMs & AI"
+        "Database Migrations"
       ]
     }
   ];
