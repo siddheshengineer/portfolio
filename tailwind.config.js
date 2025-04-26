@@ -1,9 +1,11 @@
+// tailwind.config.js (project root)
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'], // Ensure Tailwind scans your files
+  content: ['./src/**/*.{js,jsx,ts,tsx}'], 
   theme: {
     extend: {
       fontFamily: {
-        'Quintessential': ['Orbitron', 'sans-serif']
+        script: ['Pacifico', 'cursive'],
+        Quintessential: ['Orbitron', 'sans-serif'],
       },
     },
   },

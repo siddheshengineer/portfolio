@@ -1,5 +1,26 @@
+/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Load your fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Orbitron:wght@400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+/* Dot-grid pattern utility */
+.dot-pattern {
+  position: absolute;
+  inset: 0;                                           /* cover the whole section */
+  background-image: radial-gradient(currentColor 1px, transparent 1px);
+  background-size: 20px 20px;                         /* adjust dot spacing */
+  color: #f3f4f6;                                     /* very light grey dots */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Optional: you can define a utility class for your script font */
+@layer utilities {
+  .font-script {
+    font-family: 'Pacifico', cursive;
+  }
+}
