@@ -11,7 +11,9 @@ const Nav = ({ onMenuClick }) => (
       </Link>
       <div className="hidden md:flex space-x-6">
         <Link to="/" className="text-gray-600 hover:text-gray-900">Home</Link>
-        <Link to="/blog" className="text-gray-600 hover:text-gray-900">Blog</Link>
+        <a href="https://medium.com/@siddheshnikam8" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900">
+          Blog
+        </a>
         <Link to="#case-studies" className="text-gray-600 hover:text-gray-900">Case Studies</Link>
         <Link to="#talks" className="text-gray-600 hover:text-gray-900">Talks</Link>
         <Link to="#trainings" className="text-gray-600 hover:text-gray-900">Trainings</Link>

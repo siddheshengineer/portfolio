@@ -1,60 +1,122 @@
-// src/components/Hero.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Hero() {
   return (
-    <section className="relative pt-20 pb-16 bg-white overflow-hidden">
-      {/* dot‐pattern + accent circle… */}
-      <div className="dot-pattern" />
-      <div className="absolute top-0 right-0 w-80 h-80 bg-green-600 rounded-full opacity-10 mix-blend-multiply" />
+    <section className="relative pt-20 pb-16 bg-transparent overflow-hidden">
+      {/* subtle dot‐pattern */}
+      <div className="dot-pattern opacity-20" />
 
-      {/* TEXT NAV OVERLAY */}
-      <div className={
-            `absolute inset-x-0 top-4 flex 
-            justify-center md:justify-end    /* center on mobile, right-align on md+ */
-            space-x-8                       /* a bit more gap between links */
-            px-8                            /* extra breathing room */
-            text-gray-600 
-            text-base md:text-lg            /* base size → larger on md+ */
-            `
-          }
+      {/* soft accent circle */}
+      <div className="absolute top-0 right-0 w-80 h-80 bg-purple-600 rounded-full opacity-10 mix-blend-multiply" />
+
+      {/* navigation overlay */}
+      <div className="absolute inset-x-0 top-4 flex justify-center md:justify-end space-x-8 px-8 text-gray-300 text-base md:text-lg">
+        <Link to="/" className="hover:text-white">Home</Link>
+        <a
+          href="https://medium.com/@siddheshnikam8"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-white"
         >
-        <Link to="/" className="hover:text-gray-900">Home</Link>
-        <Link to="/blog" className="hover:text-gray-900">Blog</Link>
-        <Link to="/blog" className="hover:text-gray-900">Case Studies</Link>
-        <Link to="/blog" className="hover:text-gray-900">Contact</Link>
-        <Link to="/talks" className="hover:text-gray-900">Talks</Link>
-        <a href="https://github.com/your-user" target="_blank" rel="noopener" className="hover:text-gray-900">
+          Blog
+        </a>
+        <Link to="#case-studies" className="hover:text-white">Case Studies</Link>
+        <Link to="#contact" className="hover:text-white">Contact</Link>
+        <Link to="#talks" className="hover:text-white">Talks</Link>
+        <a
+          href="https://github.com/siddheshnikam8"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-white"
+        >
           <FaGithub className="inline-block w-5 h-5" />
         </a>
-        <a href="https://linkedin.com/in/your-user" target="_blank" rel="noopener" className="hover:text-gray-900">
+        <a
+          href="https://linkedin.com/in/siddheshnikam8"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-white"
+        >
           <FaLinkedin className="inline-block w-5 h-5" />
         </a>
       </div>
 
-      {/* HERO CONTENT */}
-      <div className="relative z-10 w-full px-6">
-        <p className="text-sm uppercase text-gray-500 tracking-widest">Hello, my name is</p>
-        <h1 className="mt-2 text-5xl font-bold text-gray-900">
-          Siddhesh <span className="text-green-600">Nikam</span>
+      {/* hero text */}
+      <div className="relative z-10 w-full px-6 max-w-3xl mx-auto text-center md:text-left">
+        <p className="text-sm uppercase text-gray-400 tracking-widest">
+          Hello, my name is
+        </p>
+        <h1 className="mt-2 text-5xl font-bold text-white">
+          Siddhesh <span className="text-blue-400">Nikam</span>
         </h1>
-        <h2 className="mt-4 text-2xl font-script text-green-600">
-          DevOps &amp; Cloud Automation Expert
+        <h2 className="mt-4 text-2xl font-script text-blue-400">
+          DevOps Engineer &amp; Cloud Automation Expert
         </h2>
-        <div className="mt-6 space-x-4">
-          <Link
-            to="#contact"
-            className="inline-block bg-green-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-green-700 transition"
-          >
-            Book Discovery Call
-          </Link>
-          <a href="/resume.pdf" className="inline-block text-green-600 hover:underline">
-            Resume
-          </a>
-        </div>
       </div>
     </section>
   );
 }
+
+
+// import React from 'react';
+// import { Link } from 'react-router-dom';
+// import { FaGithub, FaLinkedin } from 'react-icons/fa';
+
+// export default function Hero() {
+//   return (
+//     <section className="relative pt-20 pb-16 bg-transparent overflow-hidden">
+//       {/* subtle dot‐pattern */}
+//       <div className="dot-pattern opacity-20" />
+
+//       {/* accent circle */}
+//       <div className="absolute top-0 right-0 w-80 h-80 bg-purple-600 rounded-full opacity-10 mix-blend-multiply" />
+
+//       {/* Nav overlay */}
+//       <div className="absolute inset-x-0 top-4 flex justify-center md:justify-end space-x-8 px-8 text-gray-300 text-base md:text-lg">
+//         <Link to="/" className="hover:text-white">Home</Link>
+//         <a
+//           href="https://medium.com/@siddheshnikam8"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           className="hover:text-white"
+//         >
+//           Blog
+//         </a>
+//         <Link to="#case-studies" className="hover:text-white">Case Studies</Link>
+//         <Link to="#contact" className="hover:text-white">Contact</Link>
+//         <Link to="#talks" className="hover:text-white">Talks</Link>
+//         <a
+//           href="https://github.com/siddheshnikam8"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           className="hover:text-white"
+//         >
+//           <FaGithub className="inline-block w-5 h-5" />
+//         </a>
+//         <a
+//           href="https://linkedin.com/in/siddheshnikam8"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           className="hover:text-white"
+//         >
+//           <FaLinkedin className="inline-block w-5 h-5" />
+//         </a>
+//       </div>
+
+//       {/* Hero content */}
+//       <div className="relative z-10 w-full px-6 max-w-3xl mx-auto text-center md:text-left">
+//         <p className="text-sm uppercase text-gray-400 tracking-widest">
+//           Hello, my name is
+//         </p>
+//         <h1 className="mt-2 text-5xl font-bold text-white">
+//           Siddhesh <span className="text-blue-400">Nikam</span>
+//         </h1>
+//         <h2 className="mt-4 text-2xl font-script text-blue-400">
+//           DevOps Engineer &amp; Cloud Automation Expert
+//         </h2>
+//       </div>
+//     </section>
+//   );
+// }
