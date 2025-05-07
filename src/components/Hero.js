@@ -4,9 +4,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Hero() {
   return (
-    <section className="relative pt-20 pb-16 bg-transparent overflow-hidden">
-      {/* subtle dot‐pattern */}
-      <div className="dot-pattern opacity-20" />
+    <section id="hero" className="relative pt-20 pb-16 bg-transparent overflow-hidden">
 
       {/* soft accent circle */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-purple-600 rounded-full opacity-10 mix-blend-multiply" />

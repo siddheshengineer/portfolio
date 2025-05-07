@@ -55,12 +55,9 @@ const certifications = [
 
 export default function AboutMe() {
   return (
-    <section id="about" className="relative py-8 bg-transparent overflow-hidden">
-      {/* subtle dot pattern */}
-      <div className="absolute inset-0 dot-pattern opacity-10 pointer-events-none" />
-
+    <section id="about" className="relative py-4 bg-transparent overflow-hidden">
       <div className="relative z-10 px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-white mb-8 text-center">About Me</h2>
+        {/* <h2 className="text-3xl font-bold text-white mb-8 text-center">About Me</h2> */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* —— LEFT COLUMN —— */}
           <div className="space-y-6">

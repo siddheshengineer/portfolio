@@ -17,22 +17,22 @@ export default function Footer() {
           console.log("Email copy failed!")
         }
       }
-      // Then open mail client
-      window.location.href = `mailto:${EMAIL}`;
+      
     };
 
     return (
 <>
-      <footer className="bg-gray-900 text-gray-400">
-        <div className="px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+      <footer className="relative z-10 bg-gray-900 text-gray-400">
+        <div className="px-6 py-4 flex flex-col md:flex-row justify-between items-center ml-0 md:ml-14 m4-0 md:mr-6">
           <p className="text-sm">&copy; {new Date().getFullYear()} Siddhesh Nikam. All rights reserved.</p>
           <div className="mt-2 md:mt-0 flex items-center space-x-6">
-            <button
+            <a
+              href={`mailto:${EMAIL}`}
               onClick={handleEmailClick}
               className="inline-flex items-center text-gray-400 hover:text-white transition focus:outline-none"
             >
               <FaEnvelope className="mr-2" />
-            </button>
+            </a>
             <a
               href="https://github.com/siddheshengineer"
               target="_blank"
@@ -54,7 +54,7 @@ export default function Footer() {
       </footer>
 
       {toastVisible && (
-        <div className="fixed bottom-6 right-6 bg-gray-800 text-white px-4 py-2 rounded shadow-lg">
+        <div className="fixed bottom-6 right-6 z-50 bg-gray-800 text-white px-4 py-2 rounded shadow-lg">
           Copied to clipboard!
         </div>
       )}
