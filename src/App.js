@@ -7,6 +7,7 @@ import Experience from './components/Experience';
 import SkillsSection from './components/SkillsSection';
 import ProjectsSection from './components/ProjectsSection';
 import Aurora from './components/Aurora';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }

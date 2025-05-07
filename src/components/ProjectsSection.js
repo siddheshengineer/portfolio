@@ -24,7 +24,7 @@ const projects = [
   {
     title: 'Astronomy Shop Microservices',
     overview:
-      'Demo microservices system with OpenTelemetry, deployed on GKE+Istio, featuring full DevSecOps CI/CD.',
+      'Multi language microservices system, working on deploying on Kubernetes+Istio, featuring full DevSecOps setup and secure CI/CD.',
     tech: ['Java', 'Golang', 'OpenTelemetry', 'Helm', 'GKE'],
     link: 'https://github.com/siddheshengineer/Astronomy-Shop---Fullstack-DevOps',
   },
@@ -51,7 +51,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="relative py-16 bg-transparent overflow-hidden">
+    <section id="projects" className="relative py-8 bg-transparent overflow-hidden">
       <div className="absolute inset-0 dot-pattern opacity-10 pointer-events-none" />
       <div className="relative z-10 px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Projects</h2>

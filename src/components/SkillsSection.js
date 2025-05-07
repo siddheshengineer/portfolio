@@ -43,7 +43,7 @@ export default function SkillsSection() {
   const [expanded, setExpanded] = useState(null);
 
   return (
-    <section id="skills" className="relative py-16 bg-transparent overflow-hidden">
+    <section id="skills" className="relative py-8 bg-transparent overflow-hidden">
       <div className="absolute inset-0 dot-pattern opacity-10 pointer-events-none" />
       <div className="relative z-10 px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Skills & Expertise</h2>

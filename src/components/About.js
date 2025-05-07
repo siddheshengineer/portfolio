@@ -55,7 +55,7 @@ const certifications = [
 
 export default function AboutMe() {
   return (
-    <section id="about" className="relative py-16 bg-transparent overflow-hidden">
+    <section id="about" className="relative py-8 bg-transparent overflow-hidden">
       {/* subtle dot pattern */}
       <div className="absolute inset-0 dot-pattern opacity-10 pointer-events-none" />
 
