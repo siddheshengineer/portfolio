@@ -22,11 +22,18 @@ export default function Hero() {
         >
           Blog
         </a>
-        <Link to="#case-studies" className="hover:text-white">Case Studies</Link>
-        <Link to="#contact" className="hover:text-white">Contact</Link>
-        <Link to="#talks" className="hover:text-white">Talks</Link>
         <a
-          href="https://github.com/siddheshnikam8"
+          href="https://ai.siddheshnikam.online/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-white"
+        >
+          AI Research Agent
+        </a>
+        {/* <Link to="#ProjectsSection" className="hover:text-white">Projects</Link>
+        <Link to="#talks" className="hover:text-white">Talks</Link> */}
+        <a
+          href="https://github.com/siddheshengineer"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-white"
@@ -34,7 +41,7 @@ export default function Hero() {
           <FaGithub className="inline-block w-5 h-5" />
         </a>
         <a
-          href="https://linkedin.com/in/siddheshnikam8"
+          href="https://www.linkedin.com/in/siddhesh-sn/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-white"
@@ -44,7 +51,7 @@ export default function Hero() {
       </div>
 
       {/* hero text */}
-      <div className="relative z-10 w-full px-6 max-w-3xl mx-auto text-center md:text-left">
+      <div className="relative z-10 w-full px-6 text-center md:text-left">
         <p className="text-sm uppercase text-gray-400 tracking-widest">
           Hello, my name is
         </p>
