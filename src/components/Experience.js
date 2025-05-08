@@ -30,7 +30,7 @@ const experience = [
     responsibilities: [
       'Provided on-call support, resolving critical incidents and maintaining 99.9% reliability.',
       'Enforced least-privilege access, strengthening security posture.',
-      'Automated 20+ tasks with scripting, saving manual hours.',
+      'Automated 20+ tasks with scripting, saving manual work hours.',
       'Created docs & architecture diagrams, streamlining knowledge sharing.',
     ],
   }
