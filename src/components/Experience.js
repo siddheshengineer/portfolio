@@ -2,14 +2,14 @@ import React from 'react';
 
 const experience = [
   {
-    title: 'DevOps Developer – Graduate Intern',
+    title: 'DevOps Developer (Graduate Intern)',
     company: 'FundEvolve',
     date: 'Dec 2023 – Apr 2024',
     responsibilities: [
-      'Engineered a streamlined deployment process using GitOps and containers, achieving faster releases.',
-      'Built a financial-goals application, enhancing UX and data tracking.',
-      'Authored CI/CD workflow docs to accelerate onboarding.',
-      'Collaborated cross-functionally to unblock developers and speed releases.',
+      'Built CI/CD pipelines for a managed container platform, cutting deploy time by 20%.',
+      'Containerized microservices, speeding development & testing by 50%.',
+      'Built a 9+ goals-tracking application, enhancing user experience.',
+      'Collaborated with teams to resolve deployment issues, accelerating releases by 20%.',
     ],
   },
   {
@@ -17,23 +17,23 @@ const experience = [
     company: 'Tata Consultancy Services',
     date: 'May 2020 – Oct 2022',
     responsibilities: [
-      'Led SRE initiatives, reducing incident response time by 35% and ensuring 99.9% uptime.',
-      'Built Jenkins & GitHub Actions pipelines, cutting change-failure rate by 40%.',
-      'Designed ArgoCD/Helm blue-green & canary deployments with auto-rollout checks.',
-      'Automated Terraform & Ansible provisioning, accelerating infra deployment by 60%.',
+      'Deployed microservices on Kubernetes clusters, ensuring HA & operational readiness.',
+      'Integrated automated security scanning into CI/CD pipelines, reducing vulnerabilities.',
+      'Built automated CI/CD pipelines, reducing change-failure rate by 40%.',
+      'Automated infrastructure provisioning with IaC, accelerating deployment by 60%.',
     ],
   },
   {
-    title: 'System Engineer (Cloud & DevOps focus)',
+    title: 'System Engineer (Cloud & DevOps)',
     company: 'Tata Consultancy Services',
     date: 'Aug 2019 – May 2020',
     responsibilities: [
-      'Participated in on-call rotations for mission-critical systems.',
-      'Implemented least-privilege access controls to strengthen cloud security.',
-      'Refactored legacy services into cloud-native microservices.',
-      'Supported seamless migrations and upgrades with zero downtime.',
+      'Provided on-call support, resolving critical incidents and maintaining 99.9% reliability.',
+      'Enforced least-privilege access, strengthening security posture.',
+      'Automated 20+ tasks with scripting, saving manual hours.',
+      'Created docs & architecture diagrams, streamlining knowledge sharing.',
     ],
-  },
+  }
 ];
 
 export default function Experience() {
