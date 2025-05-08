@@ -39,7 +39,7 @@ export default function Sidebar() {
 
   return (
     <>
-      <nav className="fixed top-1/2 left-2 transform -translate-y-1/2 z-30">
+      <nav className="hidden sm:flex fixed top-1/2 left-2 transform -translate-y-1/2 z-30">
         <ul className="flex flex-col space-y-3 bg-black bg-opacity-30 backdrop-blur-md p-2 rounded-2xl shadow-lg">
           {links.map((link) => (
             <li key={link.label} className="relative group">

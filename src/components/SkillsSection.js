@@ -58,7 +58,7 @@ export default function SkillsSection() {
   }, []);
 
   return (
-    <section id="skills" className="relative py-16 bg-transparent overflow-hidden">
+    <section id="skills" className="relative py-8 bg-transparent overflow-hidden">
       <div className="relative z-10 px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-white mb-8 text-center">Skills & Expertise</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-fr">

@@ -12,12 +12,12 @@ import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-gray-800 text-white font-sans overflow-hidden">
+    <div className="relative min-h-screen bg-gray-950 text-white font-sans overflow-hidden">
       <Sidebar />
       {/* Aurora in the very back (fixed full-screen) */}
-      <div className="fixed inset-0 w-screen h-screen z-0 pointer-events-none">
+      <div className="fixed inset-x-0 top-0 h-2/3 z-0 pointer-events-non">
         <Aurora
-          colorStops={['#3A29FF', '#FF94B4', '#FF3232']}
+          colorStops={['#0A2463', '#38AECC', '#5e60ce']}
           blend={0.4}
           amplitude={0.8}
           speed={0.5}
@@ -51,3 +51,7 @@ function App() {
 }
 
 export default App;
+
+//          colorStops={['#692669', '#9C0D38', '#87142e']} ehhh
+//colorStops={['#1e6fd7', '#173054', '#1e6fd7']} blueish
+//           colorStops={['#0A2463', '#38AECC', '#0090C1']} working blue

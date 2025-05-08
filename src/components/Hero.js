@@ -6,43 +6,63 @@ export default function Hero() {
   return (
     <section id="hero" className="relative pt-20 pb-16 bg-transparent overflow-hidden">
 
-      {/* soft accent circle */}
-      <div className="absolute top-0 right-0 w-80 h-80 bg-purple-600 rounded-full opacity-10 mix-blend-multiply" />
+      {/* soft accent circle
+      <div className="absolute top-0 right-0 w-80 h-80 bg-purple-600 rounded-full opacity-10 mix-blend-multiply" /> */}
 
       {/* navigation overlay */}
-      <div className="absolute inset-x-0 top-4 flex justify-center md:justify-end space-x-8 px-8 text-gray-50 text-base md:text-lg">
-        <Link to="/" className="hover:text-blue-700">Home</Link>
-        <a
-          href="https://medium.com/@siddheshnikam8"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-700"
-        >
-          Blog
-        </a>
-        <a
-          href="https://ai.siddheshnikam.online/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-blue-700"
-        >
-          AI Research Agent
-        </a>
-        {/* <Link to="#ProjectsSection" className="hover:text-white">Projects</Link>
-        <Link to="#talks" className="hover:text-white">Talks</Link> */}
+      <div className="absolute inset-x-0 top-4 flex justify-center md:justify-end space-x-8 px-8 text-base md:text-lg">
+        {[
+          { label: 'Home', to: '/' },
+          { label: 'Blog', href: 'https://medium.com/@siddheshnikam8' },
+          { label: 'AI Research Agent', href: 'https://ai.siddheshnikam.online/' },
+        ].map((item) => {
+          const Tag = item.to ? Link : 'a';
+          const props = item.to
+            ? { to: item.to }
+            : { href: item.href, target: '_blank', rel: 'noopener noreferrer' };
+
+          return (
+            <Tag
+              key={item.label}
+              {...props}
+              className="
+                text-gray-200 
+                transition-colors duration-300
+                hover:text-white
+                hover:[text-shadow:0_0_6px_rgba(255,255,255,0.6),0_0_12px_rgba(255,255,255,0.4)]
+              "
+            >
+              {item.label}
+            </Tag>
+          );
+        })}
+
+         {/* GitHub Icon */}
         <a
           href="https://github.com/siddheshengineer"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-blue-700"
+          className="
+            filter text-gray-200 transition duration-300
+            hover:text-white
+            hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.6)]
+            hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.4)]
+          "
         >
           <FaGithub className="inline-block w-5 h-5" />
         </a>
+
+        {/* LinkedIn Icon */}
         <a
-          href="https://www.linkedin.com/in/siddhesh-sn/"
+          href="https://linkedin.com/in/siddhesh-sn/"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-blue-700"
+          className="
+            filter text-gray-200 transition duration-300
+            hover:text-white
+            hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.6)]
+            hover:drop-shadow-[0_0_12px_rgba(255,255,255,0.4)]
+          "
         >
           <FaLinkedin className="inline-block w-5 h-5" />
         </a>
