@@ -41,7 +41,7 @@ const certifications = [
     date: '',
   },
   {
-    title: 'Oracle Cloud Infrastructure Associate',
+    title: 'OCI Foundations Associate',
     issuer: 'Oracle Cloud Infrastructure',
     date: 'Mar 2027',
   },

@@ -22,14 +22,14 @@ export default function Footer() {
 
     return (
 <>
-      <footer className="relative z-10 bg-gray-900 text-gray-400">
+      <footer className="relative z-10 bg-gray-900 text-gray-200 rounded-t-xl">
         <div className="px-6 py-4 flex flex-col md:flex-row justify-between items-center ml-0 md:ml-14 m4-0 md:mr-6">
           <p className="text-sm">&copy; {new Date().getFullYear()} Siddhesh Nikam. All rights reserved.</p>
           <div className="mt-2 md:mt-0 flex items-center space-x-6">
             <a
               href={`mailto:${EMAIL}`}
               onClick={handleEmailClick}
-              className="inline-flex items-center text-gray-400 hover:text-white transition focus:outline-none"
+              className="inline-flex items-center text-gray-200 hover:text-white transition focus:outline-none"
             >
               <FaEnvelope className="mr-2" />
             </a>
@@ -37,7 +37,7 @@ export default function Footer() {
               href="https://github.com/siddheshengineer"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition"
+              className="text-gray-200 hover:text-white transition"
             >
               <FaGithub size={20} />
             </a>
@@ -45,7 +45,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/siddhesh-sn/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition"
+              className="text-gray-200 hover:text-white transition"
             >
               <FaLinkedin size={20} />
             </a>
