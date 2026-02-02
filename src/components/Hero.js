@@ -14,7 +14,7 @@ export default function Hero() {
         {[
           { label: 'Home', to: '/' },
           { label: 'Blog', href: 'https://medium.com/@siddheshnikam8' },
-          { label: 'AI Research Agent', href: 'https://ai.siddheshnikam.online/' },
+          { label: 'AI Research Agent', href: 'https://ai-researcher.graybeach-dff15cdd.canadacentral.azurecontainerapps.io' },
         ].map((item) => {
           const Tag = item.to ? Link : 'a';
           const props = item.to

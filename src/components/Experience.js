@@ -2,6 +2,17 @@ import React from 'react';
 
 const experience = [
   {
+    title: 'Cloud Support Engineer',
+    company: 'Acturis Canada',
+    date: 'Aug 2025 – Present',
+    responsibilities: [
+      'Used Elastic Stack to rapidly detect, analyze, and resolve system issues.',
+      'Investigated alerts and proactively troubleshot issues to reduce downtime.',
+      'Diagnosed and fixed failed nodes, restoring stable service operation.',
+      'Collaborated with engineering teams to resolve environment-related issues.',
+    ],
+  },
+  {
     title: 'DevOps Developer (Graduate Intern)',
     company: 'FundEvolve',
     date: 'Dec 2023 – Apr 2024',

@@ -36,14 +36,14 @@ const certifications = [
     date: 'Jun 2026',
   },
   {
+    title: 'Azure Developer Associate (AZ-204)',
+    issuer: 'Microsoft',
+    date: 'June 2026',
+  },
+  {
     title: 'PagerDuty DevOps Professional',
     issuer: 'PagerDuty',
     date: '',
-  },
-  {
-    title: 'OCI Foundations Associate',
-    issuer: 'Oracle Cloud Infrastructure',
-    date: 'Mar 2027',
   },
   // {
   //   title: 'Certified Kubernetes Administrator',

@@ -7,7 +7,7 @@ const skillCategories = [
     icon: <FaCloud size={24} className="text-blue-400" />,
     description: 'CI/CD, container orchestration & cloud infra.',
     skills: [
-      'AWS','GCP','Azure','OCI','Docker','Kubernetes','Terraform','Ansible',
+      'AWS','GCP','Azure','OCI','Docker','Kubernetes','OpenShift','Terraform','Ansible (RHAAP)',
       'ArgoCD','GitHub Actions','Jenkins','Prometheus','Grafana',
       'FluxCD','GitOps','Istio','ELK Stack',
     ],
@@ -17,7 +17,7 @@ const skillCategories = [
     icon: <FaCode size={24} className="text-blue-400" />,
     description: 'Langs, frameworks & databases for app dev.',
     skills: [
-      'Java','Python','Bash','Go','Node.js','PostgreSQL','MongoDB','MySQL',
+      'PowerShell','Java','Python','Bash','Go','Node.js','PostgreSQL','MongoDB','Oracle',
       'FastAPI','GraphQL','REST API','Neon','PHP (Laravel)',
     ],
   },
@@ -35,7 +35,7 @@ const skillCategories = [
     icon: <FaTools size={24} className="text-blue-400" />,
     description: 'Supporting tools, methodologies & best practices.',
     skills: [
-      'Agile','Scrum','Jira','RabbitMQ','Microservices','Database Migrations', 'DNS Management',
+      'Agile','Jira','RabbitMQ','Microservices','Database Migrations', 'DNS Management',
       'Ingress', 'Change Management'
     ],
   },
