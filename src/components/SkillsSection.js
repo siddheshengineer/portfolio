@@ -9,7 +9,7 @@ const skillCategories = [
     skills: [
       'AWS','GCP','Azure','OCI','Docker','Kubernetes','OpenShift','Terraform','Ansible (RHAAP)',
       'ArgoCD','GitHub Actions','Jenkins','Prometheus','Grafana',
-      'FluxCD','GitOps','Istio','ELK Stack',
+      ,'GitOps','Istio','ELK Stack',
     ],
   },
   {
@@ -27,7 +27,8 @@ const skillCategories = [
     description: 'Vuln scanning, secrets mgmt & secure config.',
     skills: [
       'SonarQube','Trivy','Sync','Vault','Secrets Manager',
-      'OWASP tools','Qodana','Static Code Analysis', 'Bandit'
+      'OWASP tools','Qodana','Static Code Analysis', 'Bandit',
+      'OPSWAT MetaDefender'
     ],
   },
   {
@@ -35,7 +36,7 @@ const skillCategories = [
     icon: <FaTools size={24} className="text-blue-400" />,
     description: 'Supporting tools, methodologies & best practices.',
     skills: [
-      'Agile','Jira','RabbitMQ','Microservices','Database Migrations', 'DNS Management',
+      'Agile','Jira','Kafka','Microservices','Database Migrations', 'DNS Management',
       'Ingress', 'Change Management'
     ],
   },
